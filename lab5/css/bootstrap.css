@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Russo+One&family=Stalinist+One&display=swap');
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -26,8 +26,9 @@ a {
 }
 
 .container {
-    width: 1280px;
-    margin: auto;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
 }
 
@@ -43,7 +44,8 @@ a {
 
 .navbar {
     width: 95%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -72,18 +74,16 @@ a {
 
 @media (max-width: 1280px) {
     .container {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
-
-li, a, button {
+.navbar-nav li a, .navbar-nav li button {
     font-family: "Comfortaa", sans-serif;
     font-weight: 500;
     font-size: 20px;
     text-decoration: none;
 }
-
 
 .nav-logo {
     /*абсолютное позиционирование*/
@@ -112,18 +112,22 @@ li, a, button {
 
 .nav__links {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__links li {
-    display: inline-block;
     padding: 5px 5px;
 }
 
-.nav_links li a {
+.nav__links li a {
     transition: all 0.3s ease 0s;
+    color: #333333;
+    text-decoration: none;
 }
 
-.nav_links li a:hover {
+.nav__links li a:hover {
     color: black;
 }
 
@@ -136,19 +140,21 @@ li, a, button {
 }
 
 .hyperlinks li {
-    display: inline-block;
     padding: 0 20px;
 }
 
 .hyperlinks li a {
     transition: all 0.3s ease 0s;
+    color: #333333;
+    text-decoration: none;
 }
 
 .hyperlinks li a:hover {
     color: black;
 }
 
-button {
+/* Button styles */
+.btn {
     padding: 9px 25px;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
@@ -158,11 +164,12 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
 }
 
+/* Body styles */
 body {
     background-color: #0A0A0A;
     background-attachment: fixed;
@@ -172,16 +179,14 @@ body {
     text-align: justify;
     color: white;
     margin: auto;
-    /*width: 96%;*/
-    overflow-x: hidden;
 }
 
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Russo one", system-ui;
     margin: 1em 1em;
     color: white;
     text-align: center;
-    font-size: 30px;
 }
 
 h1 {
@@ -189,18 +194,18 @@ h1 {
     font-family: 'Stalinist One', cursive;
     color: fuchsia;
     margin: auto;
-
 }
 
 h2 {
     font-family: 'Russo One', sans-serif;
 }
 
-
+/* Bold styles */
 b, strong {
     font-weight: bold;
 }
 
+/* Image styles */
 img {
     background: transparent;
     z-index: -2;
@@ -210,19 +215,23 @@ img {
     height: 300px;
 }
 
+/* Grid styles */
 .row::after {
     clear: both;
     display: table;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
+.col {
     padding: 5px;
     text-align: center;
     color: fuchsia;
 }
 
+.col-4 {
+    width: 33.33%;
+}
+
+/* ID styles */
 #content {
     position: relative;
 }
@@ -246,5 +255,6 @@ img {
 }
 
 #div-1d {
-clear:both;
+    clear:both;
 }
+

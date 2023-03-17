@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Russo+One&family=Stalinist+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.element {
+    font-family: "Comfortaa", sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+}
+
+.basics, .about, .blockchain, .links {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.about, .blockchain {
+    margin-top: 0;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+li, a, button {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.nav-logo {
+    /*абсолютное позиционирование*/
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.rise {
+    border: 0;
+    height: 0;
+    border-bottom: 2px dashed fuchsia;
+}
+
+.hr-linear {
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid fuchsia;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: black;
+}
+
+.hyperlinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2% 30px;
+}
+
+.hyperlinks li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.hyperlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.hyperlinks li a:hover {
+    color: black;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+body {
+    background-color: #0A0A0A;
+    background-attachment: fixed;
+    font-family: 'Marmelad', sans-serif;
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    margin: auto;
+    /*width: 96%;*/
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: "Russo one", system-ui;
+    margin: 1em 1em;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+
+    font-size: 50px;
+    font-family: 'Stalinist One', cursive;
+    color: fuchsia;
+
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+img {
+    background: transparent;
+    z-index: -2;
+    border-radius: 20px;
+    max-width: 95%;
+    width: 400px;
+    height: 300px;
+}
+
+.row::after {
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    text-align: center;
+    color: fuchsia;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+    src: url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.glyphicon-hand-up:before {
+    content: "\e129";
+}
+
+.table td,
+.table th {
+    color: white;
+}
+
+#content {
+    position: relative;
+}
+
+#div-1a {
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+#div-1b {
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+#div-1с {
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+#div-1d {
+    clear: both;
+}
+

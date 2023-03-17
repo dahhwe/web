@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Russo+One&family=Stalinist+One&display=swap');
+
+$font-stack: "Comfortaa", sans-serif;
+$primary-color: white;
+$secondary-color: black;
+$container-width: 1280px;
+$element-size: 50px;
+$logo-size: 40px;
+
+$input-border-radius: 10px;
+
+$primary-color: white;
+$outline-color: fuchsia;
+$primary-font: 'Marmelad', sans-serif;
+$secondary-font: "Russo one", system-ui;
+$h1-font-size: 50px;
+$h1-font-family: 'Stalinist One', cursive;
+$h2-font-family: 'Russo One', sans-serif;
+
+$content-width: 400px;
+$text-align: center;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.container {
+  width: $container-width;
+  margin: auto;
+  position: relative;
+
+  @media (max-width: $container-width) {
+    width: 100%;
+  }
+}
+
+.element {
+  font-family: $font-stack;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: $element-size;
+  width: $element-size;
+}
+
+.basics,
+.about,
+.blockchain,
+.links {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  &.about,
+  &.blockchain {
+    margin-top: 0
+  }
+}
+
+li,
+a,
+button {
+  font-family: $font-stack;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none
+}
+
+#sequenceInput {
+    width: 300px;
+    border-radius: $input-border-radius;
+}
+
+.nav-logo {
+  position: absolute;
+  top: 5px;
+  left: 160px;
+  width: $logo-size;
+  height: $logo-size
+}
+
+.logo {
+  cursor: pointer
+}
+
+.rise {
+  border: 0;
+  height: 0;
+  border-bottom: dashed fuchsia thick
+}
+
+.hr-linear {
+  border: 0;
+  height: 0;
+  border-bottom: solid fuchsia thin
+}
+
+.nav__links {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 5px;
+
+    a {
+      transition: .3s ease;
+
+      &:hover {
+        color: $secondary-color
+      }
+    }
+  }
+}
+
+.hyperlinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 2%;
+
+  li {
+    display: inline-block;
+    padding: 0 20px;
+
+    a {
+      transition: .3s ease;
+
+      &:hover {
+        color: $secondary-color
+      }
+    }
+  }
+}
+
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(255, 255, 255, .8);
+  color: black;
+  border: 0;
+  border-radius: 20px 20px;
+  cursor: pointer;
+  transition: .3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+  }
+}
+
+
+body {
+  background-color: #0A0A0A;
+  background-attachment: fixed;
+  font-family: $primary-font;
+  position: relative;
+  font-size: 20px;
+  text-align: justify;
+  color: $primary-color;
+  margin: auto;
+  overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+  font-family: $secondary-font;
+  margin: 1em;
+  color: $primary-color;
+  text-align: center;
+  font-size: 30px
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-family: $h1-font-family;
+  color: $outline-color
+}
+
+h2 {
+  font-family: $h2-font-family
+}
+
+b,
+strong {
+  font-weight: bold
+}
+
+img {
+  background: transparent;
+  z-index: -2;
+  border-radius: 20px;
+  max-width: 95%;
+  width: 400px;
+  height: 300px
+}
+
+.row::after {
+  clear: both;
+  display: table
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  text-align: center;
+  color: fuchsia
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+  src: url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+  &-hand-up:before {
+    content: "\e129"
+  }
+}
+
+.table td, .table th {
+  color: white
+}
+
+#content {
+  position: relative;
+}
+
+#div-1a,
+#div-1b,
+#div-1с {
+  float: left;
+  width: $content-width;
+  text-align: $text-align;
+}
+
+#div-1d {
+  clear: both;
+}
